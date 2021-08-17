@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Websmith-About</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div class="nav-link-wrapper">
+        <a href="downloads.html">Downloads</a>
+      </div>
+    </div>
+        </div>
+  <div class="main"><h1>About</h1></div>
+  <div class="submain">The Websmith Company Is Pretty New Started 01/05/2021. The Ceo/Programmer Of The Company Is Nikodem Kotwicki. Nikodem Kotwicki Is From Poland And He Is The Age Of 13. He Has Created Websmith To Create Websites For People Who Don't Know How To Build One. He Also Develops kOS Scripts Which Can Be Downloaded In The Download Section.</div>
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>

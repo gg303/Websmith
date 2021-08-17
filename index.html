@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Websmith-Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div class="nav-link-wrapper">
+        <a href="downloads.html">Downloads</a>
+      </div>
+    </div>
+    </div>
+  <div class="main"><h1>Websmith</h1></div>
+  <div class="submain">The websmith is a company that develops websites like this one. Chech The About Page To Find Out More Info.</div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
