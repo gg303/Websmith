@@ -5,7 +5,7 @@
   <meta charset='UTF-8'>
   <title>Websmith-Downloads</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="downloads.css">
+  <link rel="stylesheet" href="shop.css">
 </head>
 
 <body>
@@ -21,28 +21,43 @@
           <a href="about.html">About</a>
         </div>
       </div>
-      <div class="nav-link-wrapper active-nav-link">
+      <div class="nav-link-wrapper">
         <a href="downloads.html">DOWNLOADS</a>
       </div>
-      <div class="nav-link-wrapper">
+      <div class="nav-link-wrapper active-nav-link">
         <a href="shop.html">SHOP</a>
       </div>
     </div>
         </div>
-  <div class="main"><h1>Downloads</h1></div>
-  <div class="submain">On This Page You Can Download All The kOS Scripts.</div>
+  <section>
+    <div class="container">
+      <form action="https://formspree.io/f/myylbjjp" method="POST" id="my-form">
 
-    <div class="portfolio-item-wrapper">
-      <div class="portfolio-img-background" style="background-image:url(images/starship.png)"></div>
-
-      <div class="img-text-wrapper">
-        <div class="logo-wrapper">
+        <div class="form-group">
+          <label for="firstName"> First Name</label>
+          <input type="text" id="firstName" name="firstName">
         </div>
 
-        <div class="subtitle">SN15 kOS File</div>
-        <div class="sn15download"><button type="button" onclick="window.location.href = 'https://drive.google.com/uc?export=download&id=1m7rNwNdIVPvJOxYgMlqxveir0KtE_APa';">Download</button></div>
-      </div>
+        <div class="form-group">
+          <label for="latsName">Last Name</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+          <label for="massage">Details</label>
+          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
     </div>
+    <div id="status"></div>
+  </section>
 </body>
 
 <script>
